@@ -1,7 +1,7 @@
 import { FaBrain, FaHammer, FaRocket } from "react-icons/fa";
 import Link from "next/link";
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <div className="text-white min-h-screen flex flex-col bg-gray-900">
       {/* Hero Section */}
@@ -99,4 +99,6 @@ export default function About() {
       </section>
     </div>
   );
-}
+};
+
+export default About;

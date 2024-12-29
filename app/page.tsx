@@ -3,7 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import Link from "next/link";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className="text-white min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -151,4 +151,6 @@ export default function Home() {
       </section>
     </div>
   );
-}
+};
+
+export default Home;
