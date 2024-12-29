@@ -2,7 +2,6 @@ import { FaTasks, FaBell, FaSyncAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import Link from "next/link";
-import Footer from "@/components/footer";
 
 export default function Home() {
   const textColor = "text-white";
@@ -151,8 +150,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer textColor={textColor} />
     </div>
   );
 }
