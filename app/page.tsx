@@ -4,7 +4,6 @@ import { AiFillPhone } from "react-icons/ai";
 import Link from "next/link";
 
 export default function Home() {
-  const textColor = "text-white";
   return (
     <div className="text-white min-h-screen flex flex-col">
       {/* Hero Section */}

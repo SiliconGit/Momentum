@@ -1,11 +1,5 @@
-import type { Metadata } from "next";
 import { FaBrain, FaHammer, FaRocket } from "react-icons/fa";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Momentum - About",
-  description: "Know more about the journey of building Momentum",
-};
 
 export default function About() {
   return (
