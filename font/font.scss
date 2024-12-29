@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $weight in $weights {
+  .lexend-#{$weight} {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+@each $weight in $weights {
+  .montserrat-#{$weight} {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}

@@ -1,101 +1,158 @@
-import Image from "next/image";
+import { FaTasks, FaBell, FaSyncAlt } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { AiFillPhone } from "react-icons/ai";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
 export default function Home() {
+  const textColor = "text-white";
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="text-white min-h-screen flex flex-col">
+      {/* Hero Section */}
+      <main className="flex-grow flex flex-col items-center justify-center text-center px-4 sm:px-8 relative h-screen">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 lexend-500">
+          Manage Your <span className="text-blue-500">Tasks</span> with Ease
+        </h1>
+        <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mb-10 lexend-200">
+          Your productivity companion designed to help you stay on top of tasks.
+          Add, track, and complete your to-dos seamlessly.
+        </p>
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-medium">
+            <Link href="/todo">Get Started</Link>
+          </button>
+          <button className="bg-gray-800 hover:bg-gray-700 text-white py-3 px-6 rounded-lg font-medium">
+            <Link href="/about">Learn More</Link>
+          </button>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      {/* Features Section */}
+      <section
+        id="features"
+        className="py-20 bg-gray-800 text-center text-gray-300"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8">Features</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-8">
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+            <FaTasks className="text-blue-500 text-4xl mb-4" />
+            <h3 className="text-xl font-semibold mb-4">Task Management</h3>
+            <p>Effortlessly organize your tasks and priorities.</p>
+          </div>
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+            <FaBell className="text-yellow-500 text-4xl mb-4" />
+            <h3 className="text-xl font-semibold mb-4">Reminders</h3>
+            <p>Get notified about important deadlines and events.</p>
+          </div>
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+            <FaSyncAlt className="text-green-500 text-4xl mb-4" />
+            <h3 className="text-xl font-semibold mb-4">Cross-Platform</h3>
+            <p>Access your tasks anywhere, anytime on any device.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section
+        id="testimonials"
+        className="py-20 bg-gray-900 text-center text-gray-300"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 lexend-600">
+          What Our Users Say
+        </h2>
+        <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-8 lexend-400">
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md">
+            <p>
+              "This app has changed the way I organize my day. It’s super
+              intuitive and easy to use!"
+            </p>
+            <h3 className="text-xl font-semibold mt-4">John Doe</h3>
+            <p>Productivity Expert</p>
+          </div>
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md">
+            <p>
+              "I love the reminders feature. I never miss a deadline anymore!"
+            </p>
+            <h3 className="text-xl font-semibold mt-4">Jane Smith</h3>
+            <p>Freelancer</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section
+        id="pricing"
+        className="py-20 bg-gray-800 text-center text-gray-300"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 lexend-600">
+          Pricing
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 px-4 sm:px-8 lexend-400">
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg line-through">
+            <h3 className="text-xl font-semibold mb-4 line-through">
+              Basic Plan
+            </h3>
+            <p>$9.99/month</p>
+            <ul className="mt-4">
+              <li>Task Management</li>
+              <li>Email Reminders</li>
+              <li>Cross-Platform Sync</li>
+            </ul>
+          </div>
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg line-through">
+            <h3 className="text-xl font-semibold mb-4">Pro Plan</h3>
+            <p>$19.99/month</p>
+            <ul className="mt-4">
+              <li>Task Management</li>
+              <li>Push Notifications</li>
+              <li>Advanced Analytics</li>
+            </ul>
+          </div>
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg line-through">
+            <h3 className="text-xl font-semibold mb-4">Enterprise Plan</h3>
+            <p>Custom Pricing</p>
+            <ul className="mt-4">
+              <li>Custom Features</li>
+              <li>Dedicated Support</li>
+              <li>Team Collaboration Tools</li>
+            </ul>
+          </div>
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+            <h3 className="text-2xl font-semibold mb-4 text-blue-500">
+              BEST PLAN!!
+            </h3>
+            <p className="text-lg text-white">Completely free</p>
+            <ul className="mt-4 text-gray-300">
+              <li className="mb-2">WE ARE NOT LIKE OTHERS</li>
+              <li className="mb-2">IT IS OPEN-SOURCE</li>
+              <li className="mb-2">& WELL TESTED</li>
+              <li className="text-2xl font-semibold text-center mt-4 text-blue-500">
+                Enjoy our product
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="py-20 bg-gray-900 text-center text-gray-300"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8">Contact Us</h2>
+        <div className="flex flex-col sm:flex-row justify-center gap-8 px-4 sm:px-8">
+          <div className="flex items-center justify-center">
+            <MdOutlineEmail className="text-xl text-blue-500" />
+            <p className="mx-1">Staticcodersilicon@gmail.com</p>
+          </div>
+          <div className="flex items-center justify-center">
+            <AiFillPhone className="text-xl text-blue-500" />
+            <p className="mx-1">**********</p>
+          </div>
+        </div>
+      </section>
+
+      <Footer textColor={textColor} />
     </div>
   );
 }
