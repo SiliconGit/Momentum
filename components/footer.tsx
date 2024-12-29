@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { IoLogoGoogle } from "react-icons/io";
 
