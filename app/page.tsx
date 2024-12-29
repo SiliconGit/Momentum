@@ -61,7 +61,7 @@ const Home: React.FC = () => {
         <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-8 lexend-400">
           <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md">
             <p>
-              "This app has changed the way I organize my day. It’s super
+              "This app has changed the way I organize my day. It's super
               intuitive and easy to use!"
             </p>
             <h3 className="text-xl font-semibold mt-4">John Doe</h3>

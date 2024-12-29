@@ -11,7 +11,7 @@ const About: React.FC = () => {
           This App
         </h1>
         <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mb-10 lexend-200">
-          From sleepless nights to questionable decisions, this app didn’t just
+          From sleepless nights to questionable decisions, this app didn't just
           come to life—it was **born** out of sheer willpower, caffeine, and
           some very serious AI consultations.
         </p>
@@ -71,10 +71,10 @@ const About: React.FC = () => {
           How AI Helped (Or Didn't)
         </h2>
         <p className="text-base sm:text-lg mx-4 max-w-2xl">
-          There were days I’d ask AI, "What’s wrong with my code?" and the
+          There were days I'd ask AI, "What's wrong with my code?" and the
           answer was always, "Error 404: I don't know either." But then, like a
-          true champion, AI provided solutions that were... let’s just say "very
-          interesting." It got me here, so I’m thankful—sort of.
+          true champion, AI provided solutions that were... let's just say "very
+          interesting." It got me here, so I'm thankful—sort of.
         </p>
       </section>
 
@@ -88,12 +88,12 @@ const About: React.FC = () => {
         </h2>
         <p className="text-lg sm:text-xl mb-4 mx-4">
           Despite all odds, caffeine, and AI-induced confusion, **Momentum** is
-          here, and it’s ready to help you organize your life. Or at least make
+          here, and it's ready to help you organize your life. Or at least make
           it look like you have your life together.
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-medium">
           <Link href="/todo">
-            Start Using Momentum (Or Not, I’m Not Your Boss)
+            Start Using Momentum (Or Not, I'm Not Your Boss)
           </Link>
         </button>
       </section>
