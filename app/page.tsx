@@ -3,7 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import Link from "next/link";
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <div className="text-white min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
         <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-8 lexend-400">
           <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md">
             <p>
-              "This app has changed the way I organize my day. It&rdquo;s super
+              "This app has changed the way I organize my day. It's super
               intuitive and easy to use!"
             </p>
             <h3 className="text-xl font-semibold mt-4">John Doe</h3>
@@ -151,6 +151,4 @@ const Home: React.FC = () => {
       </section>
     </div>
   );
-};
-
-export default Home;
+}
