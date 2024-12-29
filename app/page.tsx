@@ -61,15 +61,16 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-8 lexend-400">
           <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md">
             <p>
-              "This app has changed the way I organize my day. It's super
-              intuitive and easy to use!"
+              &quot;This app has changed the way I organize my day. It&apos;s
+              super intuitive and easy to use!&quot;
             </p>
             <h3 className="text-xl font-semibold mt-4">John Doe</h3>
             <p>Productivity Expert</p>
           </div>
           <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md">
             <p>
-              "I love the reminders feature. I never miss a deadline anymore!"
+              &quot;I love the reminders feature. I never miss a deadline
+              anymore!&quot;
             </p>
             <h3 className="text-xl font-semibold mt-4">Jane Smith</h3>
             <p>Freelancer</p>

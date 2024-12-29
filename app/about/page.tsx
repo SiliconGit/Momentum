@@ -11,9 +11,9 @@ export default function About() {
           This App
         </h1>
         <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mb-10 lexend-200">
-          From sleepless nights to questionable decisions, this app
-          didn&amp;#39;t just come to life—it was "born" out of sheer willpower,
-          caffeine, and some very serious AI consultations.
+          From sleepless nights to questionable decisions, this app didn&apos;t
+          just come to life—it was "born" out of sheer willpower, caffeine, and
+          some very serious AI consultations.
         </p>
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 justify-center sm:space-y-0">
           <Link href="#process">
@@ -68,15 +68,14 @@ export default function About() {
       {/* AI Collaboration Section */}
       <section id="ai" className="py-20 bg-gray-900 text-center text-gray-300">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8">
-          How AI Helped (Or Didn&amp;#39;t)
+          How AI Helped (Or Didn&apos;t)
         </h2>
         <p className="text-base sm:text-lg mx-4 max-w-2xl">
-          There were days I&amp;#39;d ask AI, &quot;What&amp;#39;s wrong with my
-          code?&quot; and the answer was always, &quot;Error 404: I
-          don&amp;#39;t know either.&quot; But then, like a true champion, AI
-          provided solutions that were... let&amp;#39;s just say &quot;very
-          interesting.&quot; It got me here, so I&amp;#39;m
-          thankful&amp;mdash;sort of.
+          There were days I&apos;d ask AI, &quot;What&apos;s wrong with my
+          code?&quot; and the answer was always, &quot;Error 404: I don&apos;t
+          know either.&quot; But then, like a true champion, AI provided
+          solutions that were... let&apos;s just say &quot;very
+          interesting.&quot; It got me here, so I&apos;m thankful—sort of.
         </p>
       </section>
 
@@ -89,13 +88,14 @@ export default function About() {
           The Final Verdict
         </h2>
         <p className="text-lg sm:text-xl mb-4 mx-4">
-          Despite all odds, caffeine, and AI-induced confusion, **Momentum** is
-          here, and it&amp;#39;s ready to help you organize your life. Or at
-          least make it look like you have your life together.
+          Despite all odds, caffeine, and AI-induced confusion,{" "}
+          <strong>Momentum</strong> is here, and it&apos;s ready to help you
+          organize your life. Or at least make it look like you have your life
+          together.
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-medium">
           <Link href="/todo">
-            Start Using Momentum (Or Not, I&amp;#39;m Not Your Boss)
+            Start Using Momentum (Or Not, I&apos;m Not Your Boss)
           </Link>
         </button>
       </section>
