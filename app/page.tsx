@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FaTasks, FaBell, FaSyncAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";

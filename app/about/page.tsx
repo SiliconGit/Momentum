@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FaBrain, FaHammer, FaRocket } from "react-icons/fa";
 import Link from "next/link";
 
